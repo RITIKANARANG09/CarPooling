@@ -1,6 +1,8 @@
 from src.Enum.role_options import RoleOptions
 from src.helper.message import Message
 from src.model.user import User
+from src.Exceptions.app_decorators import loop
+from src.helper.validations import Validations
 
 
 class Login:
@@ -10,12 +12,15 @@ class Login:
         self.rider_view=rider_view
 
     def user_login(self):
-        username=input(Message.username)
+        username=Validations.input_username()
         password = input(Message.password)
         print(Message.rolepage)
         role_option=int(input(Message.input))
         user=self.auth_controller.user_login(username, password)
+        self.login_options(role_option,user)
 
+    @loop
+    def login_options(self,role_option,user):
         if role_option == RoleOptions.PUBLISHER.value:
             self.publisher_view.choose(user)
 

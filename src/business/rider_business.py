@@ -17,12 +17,19 @@ class RiderBusiness:
         return ride_details
 
     def view_ride_by_id(self,user):
-        return self.db.get_data(Query.GET_USER_RIDE_MAPPING, (user,))
-
+        ride=self.db.get_data(Query.GET_USER_RIDE_MAPPING, (user,))
+        if ride:
+            return ride
+        else:
+            raise NotFoundError(Message.not_found)
     def view_available_rides(self,data):
-        return self.db.get_data(Query.SEARCH_RIDES,(data.departure,data.destination))
-
+        rides=self.db.get_data(Query.SEARCH_RIDES,(data.departure,data.destination))
+        if rides:
+            return rides
+        else:
+            raise NotFoundError(Message.not_found)
     def add_ride(self,data):
+
         self.db.add_data(Query.CREATE_RIDE_MAPPING,(data.id,data.rider_name,data.ride_id1,data.ride_id2))
 
     def delete_ride(self,ride_id):

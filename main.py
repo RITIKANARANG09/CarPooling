@@ -17,6 +17,7 @@ from src.business.auth_business import AuthBusiness
 from src.database.database import Database
 from src.business.publisher_business import PublisherBusiness
 from src.views.rider_view import Rider
+from src.helper.logs import Log
 
 logging.basicConfig(
     format='%(asctime)s %(levelname)-8s [%(filename)s %(funcName)s:%(lineno)d] %(message)s',
@@ -26,6 +27,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 if __name__ == '__main__':
+    logger.info(Log.APP_STARTED)
     id=str(uuid.uuid1())
     print(id)
 
@@ -57,7 +59,7 @@ if __name__ == '__main__':
 
     home_page=HomePage(login,register)
     home_page.start()
-
+    logger.info(Log.APP_STOPPED)
     #choose vehicle
     #add vehicle constraint
     #book ride constraint

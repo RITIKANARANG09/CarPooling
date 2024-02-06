@@ -4,56 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91eaa51a-76d1-4388-a09c-c0b44dec085f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/CarPooling.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Enum/admin_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Enum/homepage_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Enum/publisher_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Enum/rider_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Enum/role_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/duplicate_error.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/not_found_error.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/range_error.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/admin_business.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/auth_business.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/publisher_business.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/business/rider_business.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/query.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/admin_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/auth_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/publisher_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/rider_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/CarPooling.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helper/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helper/exception_handler_decorator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helper/logs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helper/message.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/ride.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/rider_input.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/user_ride_mapping.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/user_vehicle_mapping.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/vehicle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/home_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/login_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/register_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/rider_view.py" afterDir="false" />
+    <list default="true" id="91eaa51a-76d1-4388-a09c-c0b44dec085f" name="Changes" comment="Initial">
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/app_decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helper/validations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_business/test_auth_business.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_business/test_publisher_business.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_business/test_rider_business.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enum/admin_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enum/admin_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/auth_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/auth_business.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/publisher_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/publisher_business.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business/rider_business.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/rider_business.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/auth_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/auth_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/exception_handler_decorator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/exception_handler_decorator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/logs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/logs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/message.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/admin_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/home_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/login_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/register_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/register_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/rider_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/rider_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Unit Test" />
         <option value="Python Script" />
       </list>
     </option>
@@ -81,15 +54,40 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_auth_business.TestAuthBusiness.test_add_user_to_db_failed.executor": "Run",
+    "Python tests.Python tests for test_auth_business.TestAuthBusiness.test_add_user_to_db_success.executor": "Run",
+    "Python tests.Python tests for test_auth_business.TestAuthBusiness.test_get_user_details.executor": "Run",
+    "Python tests.Python tests for test_auth_business.test_add_user_to_db_success.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_add_ride_to_db_failed.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_add_ride_to_db_success.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_add_vehicle_to_db.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_add_vehicle_to_db_failed.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_add_vehicle_to_db_success.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_delete_ride_from_db.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_delete_ride_from_db_failed.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_delete_vehicle_from_db_failed.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_delete_vehicle_from_db_success.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_view_ride_from_db_success.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_view_vehicles.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_view_vehicles_not_found.executor": "Run",
+    "Python tests.Python tests for test_publisher_business.TestPublisherBusiness.test_view_vehicles_not_found.test_delete_ride_from_db.executor": "Debug",
+    "Python tests.Python tests for test_rider_business.TestRiderBusiness.test_delete_ride.executor": "Run",
+    "Python tests.Python tests for test_rider_business.TestRiderBusiness.test_delete_ride_failed.executor": "Run",
+    "Python tests.Python tests for test_rider_business.TestRiderBusiness.test_view_available_rides.executor": "Run",
+    "Python tests.Python tests for test_rider_business.TestRiderBusiness.test_view_available_rides_failed.executor": "Run",
+    "Python tests.Python tests for test_rider_business.TestRiderBusiness.test_view_available_rides_success.executor": "Run",
+    "Python tests.Python tests for test_rider_business.TestRiderBusiness.test_view_ride_by_ride_id_failed.executor": "Run",
+    "Python tests.Python tests for test_rider_business.TestRiderBusiness.test_view_ride_by_ride_id_success.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/rnarang/PycharmProjects/CarPooling/Exceptions"
+    "last_opened_file_path": "C:/Users/rnarang/PycharmProjects/CarPooling/tests/test_business"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rnarang\PycharmProjects\CarPooling\tests\test_business" />
       <recent name="C:\Users\rnarang\PycharmProjects\CarPooling\Exceptions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -97,7 +95,7 @@
       <recent name="C:\Users\rnarang\PycharmProjects\CarPooling\src\controllers" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests for test_rider_business.TestRiderBusiness.test_view_ride_by_ride_id_failed">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="CarPooling" />
       <option name="ENV_FILES" value="" />
@@ -120,6 +118,90 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_rider_business.TestRiderBusiness.test_delete_ride" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="CarPooling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test_business" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_rider_business.TestRiderBusiness.test_delete_ride&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_rider_business.TestRiderBusiness.test_delete_ride_failed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="CarPooling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test_business" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_rider_business.TestRiderBusiness.test_delete_ride_failed&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_rider_business.TestRiderBusiness.test_view_available_rides_failed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="CarPooling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test_business" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_rider_business.TestRiderBusiness.test_view_available_rides_failed&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_rider_business.TestRiderBusiness.test_view_ride_by_ride_id_failed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="CarPooling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test_business" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_rider_business.TestRiderBusiness.test_view_ride_by_ride_id_failed&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_rider_business.TestRiderBusiness.test_view_ride_by_ride_id_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="CarPooling" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/test_business" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_rider_business.TestRiderBusiness.test_view_ride_by_ride_id_success&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_rider_business.TestRiderBusiness.test_view_ride_by_ride_id_failed" />
+        <item itemvalue="Python tests.Python tests for test_rider_business.TestRiderBusiness.test_view_ride_by_ride_id_success" />
+        <item itemvalue="Python tests.Python tests for test_rider_business.TestRiderBusiness.test_delete_ride_failed" />
+        <item itemvalue="Python tests.Python tests for test_rider_business.TestRiderBusiness.test_delete_ride" />
+        <item itemvalue="Python tests.Python tests for test_rider_business.TestRiderBusiness.test_view_available_rides_failed" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -137,20 +219,33 @@
       <option name="presentableId" value="Default" />
       <updated>1706353117877</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial">
+      <option name="closed" value="true" />
+      <created>1706848679082</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706848679082</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/views/login_view.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/business/publisher_business.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/business/publisher_business.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/src/Exceptions/app_decorators.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -2,21 +2,24 @@ from src.Enum.rider_options import RiderOptions
 from src.helper.message import Message
 from src.model.rider_input import RiderInput
 from src.model.user_ride_mapping import UserRideMapping
-
+from src.Exceptions.app_decorators import loop
 
 class Rider:
     def __init__(self, rider_controller,publisher_controller):
         self.rider_controller = rider_controller
         self.publisher_controller=publisher_controller
 
+    @loop
     def choose(self, user):
         print(Message.riderpage)
         option = int(input(Message.input))
 
         if option == RiderOptions.book_ride.value:
             self.book_ride(user)
+
         elif option == RiderOptions.view_booked_ride.value:
             self.view_booked_ride(user)
+
         elif option == RiderOptions.delete_booked_ride.value:
             self.delete_booked_ride(user)
 

@@ -1,3 +1,4 @@
+from src.Exceptions.duplicate_error import DuplicateError
 from src.config.query import Query
 from src.Exceptions.not_found_error import NotFoundError
 from src.helper.message import Message
@@ -6,6 +7,10 @@ class PublisherBusiness:
         self.db=db
 
     def add_ride_to_db(self,ride):
+        rides=self.db.get_data(Query.GET_RIDE_BY_RIDE_NO, (ride.ride_id,))
+
+        if rides:
+            raise DuplicateError(Message.ride_exists_already)
         self.db.add_data(Query.CREATE_RIDE,(ride.ride_id, ride.station,ride.date,ride.distance, ride.total_distance,
                                             ride.vehicle_registration_number,ride.time,ride.sequence_number))
 
@@ -25,6 +30,9 @@ class PublisherBusiness:
 
 
     def add_vehicle_to_db(self,vehicle,user_vehicle_mapping):
+        vehicle_exists=self.db.get_data(Query.GET_USER_VEHICLE_MAPPING,(user_vehicle_mapping.publisher_name))
+        if user_vehicle_mapping.vehicle_registration_number in vehicle_exists:
+            raise DuplicateError(Message.ride_exists_already)
         self.db.add_data(Query.CREATE_VEHICLE,((vehicle.vehicle_registration_number,vehicle.vehicle_brand,vehicle.vehicle_name,vehicle.sitting_capacity)))
         self.db.add_data(Query.CREATE_VEHICLE_MAPPING,((user_vehicle_mapping.id,user_vehicle_mapping.publisher_name,user_vehicle_mapping.vehicle_registration_number)))
 

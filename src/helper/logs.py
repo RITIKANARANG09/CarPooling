@@ -9,5 +9,6 @@ class Log:
     FETCHED_DATA="Successfully fetched data"
     ADDED_DATA="Successfully added data"
     DELETED_DATA="Successfully deleted data"
+    LOG_INVALID_INPUT="Invalid input"
 
 

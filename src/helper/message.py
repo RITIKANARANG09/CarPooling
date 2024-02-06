@@ -7,6 +7,7 @@ class Message:
     input = "Enter your choice : "
     username = "Enter your name : "
     password = "Enter password : "
+    phone_number ="Enter your number : "
 
     publisherpage="""
     1. Publish ride
@@ -46,6 +47,7 @@ class Message:
     no_registered_vehicle = "You don't have any registered vehicles yet !!"
     registered_vehicle = "Your registered vehciles are : "
     choose_vehicle_to_delete = "Which vehicle you want to delete from the above vehicles : "
+    vehicle_exists_already = "Sorry this vehicle exists already !!"
 
     departure="Enter your departure : "
     destination="Enter your destination : "
@@ -62,8 +64,10 @@ class Message:
     ride_deleted="Ride deleted successfully"
     choose_ride_to_book="Choose ride to book : "
     ride_booked_successfully="Your ride booked successfully !! "
+    ride_exists_already = "Sorry this ride exists already !!"
 
     user_exists_already="Sorry this username is already taken !!"
     not_found="Value not exists"
+    wrong_input="Invalid input !!, enter a correct one : "
 
 
